@@ -1,215 +1,528 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>영화 미학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연남 마사지 이용 후기 — 전문가가 정리한 선택 안내서</title>
+    <meta name="description" content="연남 마사지 이용 후기를 통해 검증된 업소별 비교, 이용 전 체크리스트, 유형별 추천 기준을 전문적이고 객관적인 관점에서 안내합니다.">
+    <meta name="keywords" content="연남 마사지, 마사지 후기, 연남 마사지 추천, 마사지 이용 안내, 연남 헬스케어">
+    <link rel="canonical" href="https://yeonnam-massage-note.go-hapjeong-club.xyz">
+    <meta name="bpaas-design-system" content="organic-stripe">
+    <meta name="bpaas-design-theme" content="kr-organic-stripe">
+    <meta property="og:title" content="연남 마사지 이용 후기 — 전문가가 정리한 선택 안내서">
+    <meta property="og:description" content="연남 마사지 이용 후기를 통해 검증된 업소별 비교, 이용 전 체크리스트, 유형별 추천 기준을 안내합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yeonnam-massage-note.go-hapjeong-club.xyz">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="연남 마사지 이용 후기 — 전문가가 정리한 선택 안내서">
+    <meta name="twitter:description" content="연남 마사지 이용 후기를 통해 검증된 업소별 비교, 이용 전 체크리스트, 유형별 추천 기준을 안내합니다.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "연남 마사지 이용 후기 — 전문가가 정리한 선택 안내서",
+        "description": "연남 마사지 이용 후기를 통해 검증된 업소별 비교, 이용 전 체크리스트, 유형별 추천 기준을 안내합니다.",
+        "url": "https://yeonnam-massage-note.go-hapjeong-club.xyz",
+        "author": {
+            "@type": "Person",
+            "name": "로컬 헬스케어 분석가 이지훈"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "연남 마사지 노트"
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "연남 마사지 업소 선택 시 가장 중요한 기준은 무엇인가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "검증된 위생 관리, 명확한 가격 정책, 그리고 실제 후기에 나타난 전문성입니다. 특히 사전에 제공되는 프로그램 설명의 구체성을 반드시 확인해야 합니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "첫 방문 시 준비해야 할 사항이 있나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "본인의 건강 상태(기저질환, 부상 부위)와 기대하는 효과를 사전에 정리해두면 상담 시 더 적합한 프로그램을 안내받을 수 있습니다. 편한 복장 착용도 권장됩니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "어떤 증상에 어떤 유형의 마사지가 적합한가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "만성적인 근육 뭉침에는 심부 마사지가, 전반적인 스트레스 해소에는 스웨디시나 아로마가 적합합니다. 정확한 진단은 전문 상담을 통해 이루어져야 합니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "이용 후기를 통한 비교가 실제로 도움이 되나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "체계적으로 정리된 후기는 업소의 서비스 품질, 환경, 그리고 실제 이용객의 만족도를 객관적으로 파악하는 데 매우 유용합니다. 개인의 선호도와 결합하여 판단하는 것이 가장 효과적입니다."
+                }
+            }
+        ]
     }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
-<meta property="og:image" content="og-image.svg">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+    </script>
+    <style>
+        :root {
+            --primary: #2e2522;
+            --secondary: #fcf8f2;
+            --accent: #7f5539;
+            --border-thin: 1px solid #e0dbd5;
+            --gap-space: 32px;
+            --padding-space: 48px;
+            --section-gap: 80px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Nanum Myeongjo', 'Nanum Gothic', serif;
+            line-height: 1.8;
+            color: var(--primary);
+            background-color: var(--secondary);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .q-box-z512 {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 var(--padding-space);
+        }
+
+        .t-nav-kwl9 {
+            position: sticky;
+            top: 0;
+            background-color: var(--secondary);
+            border-bottom: var(--border-thin);
+            z-index: 100;
+        }
+
+        .t-nav-zfd5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .x-side-1xqf {
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .k-head-pvhm {
+            display: flex;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .n-grid-dc66 a {
+            color: var(--primary);
+            text-decoration: none;
+            font-family: system-ui, -apple-system, sans-serif;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+
+        .n-grid-dc66 a:hover {
+            color: var(--accent);
+        }
+
+        .r-item-tkqn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        .q-foot-bs2o {
+            padding-top: 120px;
+            padding-bottom: var(--section-gap);
+            text-align: left;
+        }
+
+        .x-main-gm7k {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 32px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .n-ico-znut {
+            font-size: clamp(2.5rem, 5vw, 3.8rem);
+            font-weight: 400;
+            line-height: 1.15;
+            margin-bottom: 48px;
+            letter-spacing: -0.01em;
+        }
+
+        .x-main-x9lw {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            max-width: 640px;
+            color: rgba(46, 37, 34, 0.8);
+            margin-bottom: 48px;
+        }
+
+        .k-nav-u3fd {
+            display: inline-block;
+            width: 60px;
+            height: 2px;
+            background-color: var(--primary);
+            margin-bottom: 32px;
+        }
+
+        .v-hero-ho7m {
+            padding: var(--section-gap) 0;
+            border-top: var(--border-thin);
+        }
+
+        .x-box-q5j6 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 1.3;
+            margin-bottom: 48px;
+        }
+
+        .r-side-d8xm {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--gap-space);
+            margin-bottom: var(--section-gap);
+        }
+
+        .k-head-9y5b {
+            padding: 32px;
+            border: var(--border-thin);
+            background: var(--secondary);
+            transition: border-color 0.2s ease;
+        }
+
+        .k-head-9y5b:hover {
+            border-color: var(--accent);
+        }
+
+        .v-list-iqt5 {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 16px;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .n-top-n74f {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .k-grid-3fve {
+            padding: var(--section-gap) 0;
+            border-top: var(--border-thin);
+        }
+
+        .m-img-a3fx {
+            margin-bottom: 48px;
+            max-width: 720px;
+        }
+
+        .v-box-udca {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            margin-bottom: 16px;
+        }
+
+        .t-card-shfz {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: rgba(46, 37, 34, 0.7);
+            padding-left: 16px;
+            border-left: 2px solid var(--accent);
+            margin: 32px 0;
+            font-style: italic;
+        }
+
+        .n-side-fyqs {
+            padding: var(--section-gap) 0;
+            border-top: var(--border-thin);
+        }
+
+        .t-item-250r {
+            margin-bottom: 64px;
+        }
+
+        .r-card-cjiv {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: var(--border-thin);
+        }
+
+        .k-top-509b {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.5;
+            margin-bottom: 16px;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        .k-top-509b:hover {
+            color: var(--accent);
+        }
+
+        .r-head-8kyk {
+            font-size: 1rem;
+            line-height: 1.9;
+            color: rgba(46, 37, 34, 0.8);
+            display: none;
+            padding-bottom: 8px;
+        }
+
+        .t-head-f3px {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .m-img-k6p3 {
+            margin-top: var(--section-gap);
+            padding-top: var(--padding-space);
+            border-top: var(--border-thin);
+            font-family: system-ui, -apple-system, sans-serif;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        .q-side-b1o2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--gap-space);
+            margin-bottom: var(--padding-space);
+        }
+
+        .v-body-3v7k {
+            margin-bottom: 8px;
+        }
+
+        .r-main-4v50 {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .v-wrap-kwj1 {
+            color: rgba(46, 37, 34, 0.6);
+        }
+
+        .t-body-8wnr {
+            font-size: 0.8rem;
+            color: rgba(46, 37, 34, 0.6);
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --padding-space: 24px;
+                --section-gap: 60px;
+            }
+
+            .r-item-tkqn {
+                display: block;
+            }
+
+            .k-head-pvhm {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--secondary);
+                flex-direction: column;
+                padding: 16px;
+                border-bottom: var(--border-thin);
+            }
+
+            .k-head-pvhm.active {
+                display: flex;
+            }
+
+            .q-foot-bs2o {
+                padding-top: 80px;
+            }
+
+            .q-side-b1o2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>영화 미학 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>영화 미학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>안드레이 타르코프스키의 장시간 촬영(Long Take)과 조형적 침묵의 미학</h3>
-          <p>세계적인 영화 거장 안드레이 타르코프스키 감독이 고집했던 롱테이크 샷 기법은 단순히 기술적인 길이를 넘어 관객의 물리적 시간 감각을 정지시키고 인위적인 미장센 속 조형적 침묵을 체...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>고전 공포영화 음향 효과 속 숨겨진 악기: 워터폰(Waterphone)의 금속성 불협화음</h3>
-          <p>스크린 위에 깃드는 기괴하고 날카로운 서스펜스를 조율할 때 필수로 채용되는 특수 타악기인 워터폰은 청동 실린더 내부에 차 있는 물의 양에 따라 공진 주파수가 극적으로 변하여 사람의...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>스탠리 큐브릭 감독의 대칭 구도: 1점 투시 도식(One-Point Perspective)이 주는 심리적 압박</h3>
-          <p>완벽주의적인 시네아스트 스탠리 큐브릭이 애용했던 화면 정중앙의 1점 투시 수렴 대칭 구도는 관객의 시선을 강제로 가두어 인공적인 폐쇄 공포와 거역할 수 없는 심리적 억압 효과를 자...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>시네필과 영화 예술 매니아들이 엄선 정리한 강남 셔츠룸 상세 정보 리포트</h3>
-          <p>빛과 어둠의 정교한 시각 프레임과 기하학적 미장센의 깊은 울림을 공부하며 시각 예술의 안목을 키워가는 현대의 시네필분들이라면, 극장 밖 현실 세계에서 느끼는 여가의 만족도와 품격 ...</p>
-        </a>
-      
+    <header class="t-nav-kwl9">
+        <div class="q-box-z512">
+            <div class="t-nav-zfd5">
+                <div class="x-side-1xqf">연남 마사지 노트</div>
+                <button class="r-item-tkqn" aria-label="메뉴 열기">≡</button>
+                <ul class="k-head-pvhm">
+                    <li class="n-grid-dc66"><a href="#">selection criteria</a></li>
+                    <li class="n-grid-dc66"><a href="#">pre-check</a></li>
+                    <li class="n-grid-dc66"><a href="#">suitability</a></li>
+                    <li class="n-grid-dc66"><a href="#">faq</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <main class="q-box-z512">
+        <section class="q-foot-bs2o">
+            <div class="x-main-gm7k">Yeonnam Massage Review</div>
+            <h1 class="n-ico-znut">연남 마사지 이용 후기</h1>
+            <p class="x-main-x9lw">데이터와 검증된 후기를 기반으로, 연남 지역 마사지 업소 선택에 필요한 객관적인 정보를 전문가 시각으로 정리했습니다.</p>
+            <div class="k-nav-u3fd"></div>
+        </section>
+
+        <section class="v-hero-ho7m">
+            <h2 class="x-box-q5j6">기본 선택 기준</h2>
+            <div class="r-side-d8xm">
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">01</div>
+                    <p class="n-top-n74f">위생 및 시설 관리 상태. 모든 개인 관리 도구의 멸균 처리 여부와 시설의 전반적인 청결도는 최우선 기준입니다.</p>
+                </article>
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">02</div>
+                    <p class="n-top-n74f">프로그램 상세 안내의 투명성. 효과, 부작용, 가격에 대한 명확하고 구체적인 사전 설명이 이루어져야 합니다.</p>
+                </article>
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">03</div>
+                    <p class="n-top-n74f">관리사의 전문성 검증. 관련 자격증 보유 여부와 지속적인 교육 이수 여부를 묻는 것이 바람직합니다.</p>
+                </article>
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">04</div>
+                    <p class="n-top-n74f">후기 데이터의 일관성. 단일 후기가 아닌, 다수의 후기에서 나타나는 공통된 평가 패턴을 분석해야 합니다.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="k-grid-3fve">
+            <h2 class="m-img-a3fx">이용 전 확인 사항</h2>
+            <p class="v-box-udca">마사지 이용 전, 본인의 건강 상태를 점검하고 업소와의 사전 소통이 원활해야 합니다. 다음 사항을 반드시 확인하십시오.</p>
+            <blockquote class="t-card-shfz">
+                "가장 좋은 서비스는 고객의 상태를 정확히 파악한 후에 제공되는 것입니다. 상담은 선택이 아닌 필수 단계입니다."
+            </blockquote>
+            <div class="r-side-d8xm">
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">건강 상태</div>
+                    <p class="n-top-n74f">최근 수술 이력, 만성 질환, 임신 여부 등 건강 관련 정보를 반드시 관리사에게 알리십시오.</p>
+                </article>
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">목적 설정</div>
+                    <p class="n-top-n74f">단순한 휴식, 근육통 완화, 재활 목적 등 이용 목적이 명확해야 적합한 프로그램을 추천받습니다.</p>
+                </article>
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">기대 효과</div>
+                    <p class="n-top-n74f">현실적인 기대치를 설정하십시오. 마사지는 의료 행위가 아니며, 개인차가 큽니다.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="n-side-fyqs">
+            <h2 class="x-box-q5j6">증상별 적합성 가이드</h2>
+            <div class="t-item-250r">
+                <h3 class="r-side-d8xm" style="grid-column: 1 / -1; font-size: 1rem; margin-bottom: 0;">어떤 증상에 어떤 방식이 효과적인가</h3>
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">만성 근육 뭉침</div>
+                    <p class="n-top-n74f">심부 조직 마사지 또는 스포츠 마사지가 효과적입니다. 압력 조절 능력이 뛰어난 관리사를 선택하십시오.</p>
+                </article>
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">전반적 스트레스</div>
+                    <p class="n-top-n74f">아로마 테라피를 결합한 스웨디시 마사지가 적합합니다. 향과 부드러운 촉감을 통한 이완을 목표로 합니다.</p>
+                </article>
+                <article class="k-head-9y5b">
+                    <div class="v-list-iqt5">자세 불균형</div>
+                    <p class="n-top-n74f">체형 교정을 목적으로 하는 마사지를 찾아야 합니다. 사전 상담이 매우 상세해야 합니다.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="n-side-fyqs" id="faq">
+            <h2 class="x-box-q5j6">자주 묻는 질문</h2>
+            <div class="t-item-250r">
+                <div class="r-card-cjiv">
+                    <h3 class="k-top-509b">Q. 연남 마사지 업소 선택 시 가장 중요한 기준은 무엇인가요?</h3>
+                    <p class="r-head-8kyk">검증된 위생 관리, 명확한 가격 정책, 그리고 실제 후기에 나타난 전문성입니다. 특히 사전에 제공되는 프로그램 설명의 구체성을 반드시 확인해야 합니다.</p>
+                </div>
+                <div class="r-card-cjiv">
+                    <h3 class="k-top-509b">Q. 첫 방문 시 준비해야 할 사항이 있나요?</h3>
+                    <p class="r-head-8kyk">본인의 건강 상태(기저질환, 부상 부위)와 기대하는 효과를 사전에 정리해두면 상담 시 더 적합한 프로그램을 안내받을 수 있습니다. 편한 복장 착용도 권장됩니다.</p>
+                </div>
+                <div class="r-card-cjiv">
+                    <h3 class="k-top-509b">Q. 어떤 증상에 어떤 유형의 마사지가 적합한가요?</h3>
+                    <p class="r-head-8kyk">만성적인 근육 뭉침에는 심부 마사지가, 전반적인 스트레스 해소에는 스웨디시나 아로마가 적합합니다. 정확한 진단은 전문 상담을 통해 이루어져야 합니다.</p>
+                </div>
+                <div class="r-card-cjiv">
+                    <h3 class="k-top-509b">Q. 이용 후기를 통한 비교가 실제로 도움이 되나요?</h3>
+                    <p class="r-head-8kyk">체계적으로 정리된 후기는 업소의 서비스 품질, 환경, 그리고 실제 이용객의 만족도를 객관적으로 파악하는 데 매우 유용합니다. 개인의 선호도와 결합하여 판단하는 것이 가장 효과적입니다.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+
+    <footer class="q-box-z512">
+        <div class="m-img-k6p3">
+            <div class="q-side-b1o2">
+                <div class="v-body-3v7k">
+                    <div class="r-main-4v50">작성자</div>
+                    <div class="v-wrap-kwj1">로컬 헬스케어 분석가 이지훈</div>
+                    <div class="t-body-8wnr">지역 건강 정보를 5년간 정리해온 로컬 전문가</div>
+                </div>
+                <div class="v-body-3v7k">
+                    <div class="r-main-4v50">사이트 정보</div>
+                    <div class="v-wrap-kwj1">yeonnam-massage-note.go-hapjeong-club.xyz</div>
+                    <div class="t-body-8wnr">데이터 기반 객관적 정보 제공</div>
+                </div>
+            </div>
+            <div class="t-head-f3px">© 2024 연남 마사지 노트. 무단 전재 및 재배포 금지.</div>
+        </div>
     </footer>
-  </div>
+
+    <script>
+        document.querySelector('.r-item-tkqn').addEventListener('click', function() {
+            document.querySelector('.k-head-pvhm').classList.toggle('active');
+        });
+
+        document.querySelectorAll('.k-top-509b').forEach(function(el) {
+            el.addEventListener('click', function() {
+                var answer = this.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
